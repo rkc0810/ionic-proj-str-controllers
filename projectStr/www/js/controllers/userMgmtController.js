@@ -1,13 +1,14 @@
 'use strict';
   
-projStrApp.controller('UserMgmtCtrl', function ($scope, $rootScope, $location, $state, $stateParams, AppService, $timeout) {
+projStrApp.controller('UserMgmtCtrl', function ($scope, $rootScope, $location, $state, $stateParams, AppService, $timeout, AppConst, util, testService) {
 	if($location.path()=='/login'){
 		$scope.allCategories = [];
 		$timeout(function() {
 			$scope.getBNumber();
 			$scope.getCategories();
 		}, 0);
-		
+		// AngularJS Controller that uses the service
+	    testService.sayHello("Calling to testService");
 	}
 
 	$scope.getBNumber = function(){
