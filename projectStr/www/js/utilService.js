@@ -1,5 +1,5 @@
 'use strict';
-projStrApp.factory('util',function(appConfig,$ionicPopup){
+projStrApp.factory('util',function(AppConfig,$ionicPopup){
 	 return {
 		 	/*
 		 	 * @method Logs text based on verbose level
