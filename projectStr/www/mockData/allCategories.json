@@ -1,0 +1,60 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "uri": "http://teamsites.danskenet.net/sites/myseminar/testingsite/DIT/_vti_bin/listdata.svc/CategoryList(1)",
+          "etag": "W/\"1\"",
+          "type": "Microsoft.SharePoint.DataService.CategoryListItem"
+        },
+        "Title": "Electronics",
+        "Id": 1
+      },
+      {
+        "__metadata": {
+          "uri": "http://teamsites.danskenet.net/sites/myseminar/testingsite/DIT/_vti_bin/listdata.svc/CategoryList(2)",
+          "etag": "W/\"1\"",
+          "type": "Microsoft.SharePoint.DataService.CategoryListItem"
+        },
+        "Title": "Furniture",
+        "Id": 2
+      },
+      {
+        "__metadata": {
+          "uri": "http://teamsites.danskenet.net/sites/myseminar/testingsite/DIT/_vti_bin/listdata.svc/CategoryList(3)",
+          "etag": "W/\"1\"",
+          "type": "Microsoft.SharePoint.DataService.CategoryListItem"
+        },
+        "Title": "Lifestyle",
+        "Id": 3
+      },
+      {
+        "__metadata": {
+          "uri": "http://teamsites.danskenet.net/sites/myseminar/testingsite/DIT/_vti_bin/listdata.svc/CategoryList(4)",
+          "etag": "W/\"1\"",
+          "type": "Microsoft.SharePoint.DataService.CategoryListItem"
+        },
+        "Title": "Mobile",
+        "Id": 4
+      },
+      {
+        "__metadata": {
+          "uri": "http://teamsites.danskenet.net/sites/myseminar/testingsite/DIT/_vti_bin/listdata.svc/CategoryList(5)",
+          "etag": "W/\"1\"",
+          "type": "Microsoft.SharePoint.DataService.CategoryListItem"
+        },
+        "Title": "Home",
+        "Id": 5
+      },
+      {
+        "__metadata": {
+          "uri": "http://teamsites.danskenet.net/sites/myseminar/testingsite/DIT/_vti_bin/listdata.svc/CategoryList(6)",
+          "etag": "W/\"1\"",
+          "type": "Microsoft.SharePoint.DataService.CategoryListItem"
+        },
+        "Title": "Cars",
+        "Id": 6
+      }
+    ]
+  }
+}

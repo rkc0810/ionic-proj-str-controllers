@@ -4,4 +4,8 @@ projStrApp.value('AppConfig',{
 });
 projStrApp.value('AppConst', {
     PAGE_ROOT: '/',
+    URI_GET_B_NUMBER: '',
+    MOCK_URI_GET_B_NUMBER:'mockData/getBNumber.json',
+    URI_ALL_CATEGORIES:'',
+    MOCK_URI_ALL_CATEGORIES: 'mockData/allCategories.json'
 });
