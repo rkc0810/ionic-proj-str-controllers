@@ -1,26 +1,32 @@
 'use strict';
-  
-projStrApp.controller('UserMgmtCtrl', function ($scope, $rootScope, $location, $state, $stateParams, AppService, $timeout, AppConst, util, testService) {
+projStrApp.controller('UserMgmtCtrl' ,function ($scope, $rootScope, $location, $state, $stateParams, AppService, $timeout, AppConst, util, testService, $localStorage, $ionicHistory) {
 	if($location.path()=='/login'){
-		$scope.allCategories = [];
-		$timeout(function() {
-			$scope.getBNumber();
-			$scope.getCategories();
-		}, 0);
-		// AngularJS Controller that uses the service
-	    testService.sayHello("Calling to testService");
-	}
+    $scope.allCategories = [];
+    $timeout(function() {
+      $scope.getBNumber();
+      $scope.getCategories();
+    }, 0);
+    // AngularJS Controller that uses the service
+      testService.sayHello("Calling to testService");
+  }
+
+
+
 
 	$scope.getBNumber = function(){
 	  var onResponse = function (response) {
         if(typeof response == 'undefined' || response == null) {
                 console.log("onResponse error");               
             } else {         
-              console.log("onResponse success");                            
+              console.log("onResponse success");
             }
       }
       AppService.getBNumber(onResponse, onResponse);
 	}
+
+    $rootScope.myGoBack = function () {
+      $ionicHistory.goBack();
+    };
 
 	 /**
      * @method to get categories
@@ -40,8 +46,14 @@ projStrApp.controller('UserMgmtCtrl', function ($scope, $rootScope, $location, $
 
     }
 
-	$scope.home = function(){
-		$state.go('home');
+	$scope.home = function(user){
+    // if(user == undefined || user.lastName == undefined || user.firstName == undefined || user.comments == undefined) {
+    //   util.showAlertDialog("Alert", "Please fill all the details",function(){});
+    // } else{
+      $localStorage.user = user;
+      $state.go('home');
+    // }
+    
 	}
 
 

@@ -1,0 +1,23 @@
+<ion-view title="Temperature">
+	<ion-nav-bar >
+      <ion-nav-back-button class="button-light" style="display:block; font-size: 1.1em;" ng-click="myGoBack()">
+         <i class="icon ion-ios-arrow-back"></i> Back
+      </ion-nav-back-button>
+   </ion-nav-bar>
+   <ion-content class="has-header bg" overflow-scroll="true" padding="true">
+
+   <ion-list>
+      <ion-item >
+        <ion-label >pressure:{{tempDetails.main.pressure}}</ion-label>
+        <ion-label >temp:{{tempDetails.main.temp}}</ion-label>
+        <ion-label >temp_max:{{tempDetails.main.temp_max}}</ion-label>
+        <ion-label >temp_min:{{tempDetails.main.temp_min}}</ion-label>
+        <ion-label >humidity:{{tempDetails.main.humidity}}</ion-label>
+         
+
+      </ion-item>
+   </ion-list>
+      
+  
+   </ion-content>
+</ion-view>

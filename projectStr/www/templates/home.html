@@ -1,6 +1,26 @@
-<ion-view title="Project Str app">
-   <ion-content class="has-header" overflow-scroll="true" padding="true">
-      Welcome to home.html
-      <button ng-click="logOut()">Log out</button>
+<ion-view title="Home">
+	<ion-nav-bar >
+      <ion-nav-back-button class="button-light" style="display:block; font-size: 1.1em;" ng-click="myGoBack()">
+         <i class="icon ion-ios-arrow-back"></i> Back
+      </ion-nav-back-button>
+   </ion-nav-bar>
+   <ion-content class="has-header bg" overflow-scroll="true" padding="true">
+
+   <ion-list>
+      <ion-item >
+        <ion-label >First Name:{{user.firstName}}</ion-label>
+        <ion-label >Last Name:{{user.lastName}}</ion-label>
+        <ion-label >Comments:{{user.comments}}</ion-label>
+      </ion-item>
+   </ion-list>
+      
+  
+	   
+      <button class="button button-block button-positive" ng-click="logOut()">
+		  Log out
+	  </button>
+	  <button class="button button-block button-positive" ng-click="showTemp()">
+		  Show temp
+	  </button>
    </ion-content>
 </ion-view>

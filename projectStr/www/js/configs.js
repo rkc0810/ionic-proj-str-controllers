@@ -19,8 +19,18 @@ projStrApp.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/home.html',
     controller: 'HomeCtrl'
   }) 
+.state('temp', {
+    url: '/temp',
+    cache: false,
+    templateUrl: 'templates/temp.html',
+    controller: 'HomeCtrl'
+  }) 
 
 
 
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise('/temp');
+})
+.config(function ($httpProvider) {
+   $httpProvider.interceptors.push('myHttpInterceptor');
+
 })
